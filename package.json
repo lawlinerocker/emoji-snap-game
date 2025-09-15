@@ -1,0 +1,36 @@
+{
+  "name": "emoji-snap-game",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --hostname 0.0.0.0 --turbopack",
+    "build": "next build --turbopack",
+    "start": "next start",
+    "lint": "next lint",
+    "postinstall": "tailwindcss -v >/dev/null 2>&1 || echo 'Tailwind CLI not found (but Next+PostCSS will work via plugin)'"
+  },
+  "dependencies": {
+    "@mediapipe/tasks-vision": "20230920.0.0",
+    "@tensorflow/tfjs-backend-webgl": "^4.22.0",
+    "@tensorflow/tfjs-converter": "^4.22.0",
+    "@tensorflow/tfjs-core": "^4.22.0",
+    "clsx": "2.1.1",
+    "face-api.js": "^0.22.2",
+    "next": "15.5.3",
+    "node-emoji": "^2.2.0",
+    "react": "19.1.1",
+    "react-dom": "19.1.1",
+    "zustand": "5.0.8"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.13",
+    "@types/node": "24.4.0",
+    "@types/react": "19.1.13",
+    "autoprefixer": "10.4.21",
+    "eslint": "9.35.0",
+    "eslint-config-next": "15.5.3",
+    "postcss": "8.5.6",
+    "tailwindcss": "4.1.13",
+    "typescript": "5.9.2"
+  }
+}

@@ -1,0 +1,23 @@
+version: '3.9'
+name: emoji_game
+
+services:
+
+
+  emoji-game-frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports: [ "3000:3000" ]
+    environment:
+       - NODE_ENV=production
+       - NEXT_TELEMETRY_DISABLED=1
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:3000"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+
+
+

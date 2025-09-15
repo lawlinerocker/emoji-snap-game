@@ -1,0 +1,16 @@
+export const enum TH {
+  smileProb = 0.55,
+  surpriseProb = 0.55,
+  frownProb = 0.5,
+  smileWidth = 1.18,
+  mar = 0.32,
+  winkClosed = 0.16,
+  eyeOpen = 0.2,
+  eyesClosedBoth = 0.185,
+  eyesSymDiff = 0.06,
+  eyesClosedClosed = 0.17,
+  downturn = 0.06,
+  browRaiseProb = 0.45,
+  browRaise = 0.2,
+  winkAsymRatio = 0.7,
+}
