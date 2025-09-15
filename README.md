@@ -15,7 +15,7 @@ Match your facial expression to the target emoji. Built with **Next.js + MediaPi
 ---
 
 ## ☁️ Demo
--- webhost
+You can try this game from this web host:  https://emoji-snap-game.onrender.com/
 
 ---
 
